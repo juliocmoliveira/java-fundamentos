@@ -1,0 +1,168 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+            //Tarefa 1
+            /* System.out.println("Escreva sua idade");
+            int idade = scanner.nextInt();
+            if (idade <= 17){
+                System.out.println("Menor de idade");
+            }else if (idade <= 59){
+                System.out.println("Adulto");
+            }else {
+                System.out.println("Idoso");
+            }
+                */
+            //tarefa 2
+            /* System.out.println("Escreva sua Altura:");
+            float altura = scanner.nextFloat();
+            System.out.println("Escreva seu peso:");
+            float peso = scanner.nextFloat();
+            float imc = peso / (altura * altura);
+            if (imc < 18.5) {
+                System.out.println("Classificação: Abaixo do peso");
+            } else if (imc >= 18.5 && imc < 24.9) {
+                System.out.println("Classificação: Peso normal");
+            } else if (imc >= 25 && imc < 29.9) {
+                System.out.println("Classificação: Sobrepeso");
+            } else if (imc >= 30 && imc < 34.9) {
+                System.out.println("Classificação: Obesidade grau I");
+            } else if (imc >= 35 && imc < 39.9) {
+                System.out.println("Classificação: Obesidade grau II");
+            } else {
+                System.out.println("Classificação: Obesidade grau III (obesidade mórbida)");
+            } */
+
+            //Tarefa 3
+            /* System.out.println("Escreva um numero:");
+            int numero1 = scanner.nextInt();
+            System.out.println("Escreva outro numero");
+            int numero2 = scanner.nextInt();
+            System.out.println("Escolha uma operação:");
+            System.out.println("1 - Soma");
+            System.out.println("2 - Subtração");
+            System.out.println("3 - Multiplicação");
+            System.out.println("4 - Divisão");
+            int operacao = scanner.nextInt();
+            int resultado= 0;
+            switch (operacao){
+                case 1:
+                    resultado = numero1+numero2;
+                    System.out.println("Sua conta deu:"+resultado);
+                    break;
+                case 2:
+                    resultado = numero1-numero2;
+                    System.out.println("Sua conta deu:"+resultado);
+                    break;
+                case 3:
+                    resultado = numero1*numero2;
+                    System.out.println("Sua conta deu:"+resultado);
+                    break;
+                case 4:
+                    resultado = numero1/numero2;
+                    System.out.println("Sua conta deu:"+resultado);
+                    break;
+            }*/
+          //Tarefa 4
+            /*System.out.println("Escolha um setor:");
+            System.out.println("1: Alimentos");
+            System.out.println("2: Bebidas");
+            System.out.println("3: Vestuário");
+            System.out.println("4: Eletrônicos");
+            System.out.println("5: Limpeza");
+            int menu = scanner.nextInt();
+
+            switch (menu){
+                case 1:
+                    System.out.println("----Menu de Alimentos----");
+                    break;
+                case 2:
+                    System.out.println("----Menu de Bebidas----");
+                    break;
+                case 3:
+                    System.out.println("----Menu de Vestuário----");
+                    break;
+                case 4:
+                    System.out.println("----Menu de Eletrônicos----");
+                    break;
+                case 5:
+                    System.out.println("----Menu de Limpeza----");
+                    break;
+
+            }*/
+            //Tarefa 5
+            /* System.out.println("Escreva um numero para somar:");
+            int numero = scanner.nextInt();
+            int soma = 0;
+
+            while (numero != 0) {
+                soma += numero;
+                System.out.println("Escreva outro numero para somar:");
+                numero = scanner.nextInt();
+            }
+            System.out.println("Soma total deu: "+soma);*/
+
+            //Tarefa 6
+            /* System.out.println("Escreva um numero para somar:");
+            int numero1 = scanner.nextInt();
+
+            while (numero1 >1){
+                numero1--;
+                System.out.println("contagem:"+numero1);
+
+            }*/
+            //Tarefa 7
+            /* System.out.println("=== MENU DE SUPERMERCADO ===");
+            int menu;
+            do{
+                System.out.println("1 - CARNE ");
+                System.out.println("2 - BEBIDAS ");
+                System.out.println("3 - PADARIA ");
+                System.out.println("0 - SAIR");
+                System.out.println("Escolha uma opção: ");
+                 menu = scanner.nextInt();
+            }while (menu !=0);
+        */
+           //Tarefa 8
+            /*int senha;
+            do {
+                System.out.println("Digite sua senha:");
+                senha = scanner.nextInt();
+            }while (senha!= 1234);
+            */
+            // Tarefa 9
+            /*System.out.println("Digite a tabuada que deseja saber:\n");
+            int numero = scanner.nextInt();
+            int resultados;
+            for (int i = 1; i<= 10; i++){
+                resultados = numero * i;
+                System.out.println(i+"x"+numero+"="+resultados);
+            }*/
+            //Tarefa 10
+            /* System.out.println("Digite um numero para somar a quantidade dele mesmo:");
+            int numero = scanner.nextInt();
+            int soma=1;
+            for (int i = 1; i<= numero; i++){
+                soma += soma;
+            }
+            System.out.println("Soma de 1 ate "+numero +" é "+soma);*/
+
+            //Tarefa 11
+            /* int[] numero = {3,6,9,12};
+            for (int n : numero){
+                System.out.println("numeros:"+n);
+            }*/
+
+            //Tarefa 12
+            int[] numero = {3,6,9,12,15};
+            int soma= 0;
+            for (int n: numero){
+                soma +=n;
+            }
+            System.out.println("Soma:"+soma);
+    }
+}
