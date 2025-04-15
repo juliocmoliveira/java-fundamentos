@@ -1,18 +1,16 @@
 import java.time.Instant;
-import java.util.Date;
 
 public class Loan {
 
     private Instant loanDate;
     private Instant finalDate;
     private Instant realDateDevolution;
-    private String people;
+    private People people;
     private Book book;
 
-    public Loan(Instant loanDate, Instant finalDate, Instant realDateDevolution, String people, Book book){
+    public Loan(Instant loanDate, Instant finalDate, People people, Book book) {
         this.loanDate = loanDate;
         this.finalDate = finalDate;
-        this.realDateDevolution = realDateDevolution;
         this.people = people;
         this.book = book;
     }
@@ -41,11 +39,11 @@ public class Loan {
         this.realDateDevolution = realDateDevolution;
     }
 
-    public String getPeople() {
+    public People getPeople() {
         return people;
     }
 
-    public void setPeople(String people) {
+    public void setPeople(People people) {
         this.people = people;
     }
 

@@ -1,8 +1,10 @@
+import java.util.List;
+
 public class History {
 
-    private Loan loan;
+    private List<Loan> loan;
 
-    public History(Loan loan){
+    public History(List<Loan> loan) {
         this.loan = loan;
     }
 }
