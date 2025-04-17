@@ -7,6 +7,7 @@ public class Loan {
     private Instant realDateDevolution;
     private People people;
     private Book book;
+    private Notification notification;
 
     public Loan(Instant loanDate, Instant finalDate, People people, Book book) {
         this.loanDate = loanDate;
@@ -53,5 +54,13 @@ public class Loan {
 
     public void setBook(Book book) {
         this.book = book;
+    }
+
+    public Notification getNotification() {
+        return notification;
+    }
+
+    public void setNotification(Notification notification) {
+        this.notification = notification;
     }
 }

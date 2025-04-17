@@ -2,9 +2,17 @@ import java.util.List;
 
 public class History {
 
-    private List<Loan> loan;
+    private Loan loan;
 
-    public History(List<Loan> loan) {
+    public History(Loan loan) {
+        this.loan = loan;
+    }
+
+    public Loan getLoan() {
+        return loan;
+    }
+
+    public void setLoan(Loan loan) {
         this.loan = loan;
     }
 }

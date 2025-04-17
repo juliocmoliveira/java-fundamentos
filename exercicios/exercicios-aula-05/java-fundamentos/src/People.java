@@ -3,14 +3,17 @@ public abstract class People {
     private String name;
     private String cpf;
     private String email;
-    private final int quantityBooks;
-    private History history;
+    private int quantityBooksLoan;
+    private final int quantityMaxBooks;
+    private final int quantityDaysOfBorrwed;
 
-    public People(String name, String cpf, String email, int quantityBooks) {
+    public People(String name, String cpf, String email, int quantityBooksLoan, int quantityMaxBooks, int quantityDaysOfBorrwed) {
         this.name = name;
         this.cpf = cpf;
         this.email = email;
-        this.quantityBooks = quantityBooks;
+        this.quantityBooksLoan = quantityBooksLoan;
+        this.quantityMaxBooks = quantityMaxBooks;
+        this.quantityDaysOfBorrwed = quantityDaysOfBorrwed;
     }
 
     public String getName() {
@@ -37,15 +40,19 @@ public abstract class People {
         this.email = email;
     }
 
-    public int getQuantityBooks() {
-        return quantityBooks;
+    public int getQuantityMaxBooks() {
+        return quantityMaxBooks;
     }
 
-    public History getHistory() {
-        return history;
+    public int getQuantityDaysOfBorrwed() {
+        return quantityDaysOfBorrwed;
     }
 
-    public void setHistory(History history) {
-        this.history = history;
+    public int getQuantityBooksLoan() {
+        return quantityBooksLoan;
+    }
+
+    public void setQuantityBooksLoan(int quantityBooksLoan) {
+        this.quantityBooksLoan = quantityBooksLoan;
     }
 }
